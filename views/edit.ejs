@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+    <a class="text-blue-500 inline-block mb-10" href="/">Go Back To Home</a>
+    <div class="form p-10 text-white">
+        <form action="/edit" method="post">
+            <input name="Previous" class="block px-5 py-2 text-zinc-600 bg-zinc-800 w-1/4 rounded-md outline-none" type="text" placeholder="Previous name" value="<%= filename%>" >
+            <input name="new" class="block px-5 py-2 bg-zinc-800 w-1/4 rounded-md outline-none mt-2" type="text" placeholder="New Name">
+            <input type="submit" class="mt-2 bg-yellow-600 px-5 py-2 rounded-md " value="Update now">
+        </form>
+    </div>
+   </div>
+</body>
+</html>
